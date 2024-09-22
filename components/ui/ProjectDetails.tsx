@@ -1,8 +1,8 @@
+"use client"
+
 import React from 'react';
-import {cn} from "@/lib/utils";
 import Image from "next/image";
 import {clsx} from "clsx";
-import MagicButton from "@/components/ui/MagicButton";
 import ProjectButton from "@/components/ui/ProjectButton";
 
 export const ProjectDetails = ({
@@ -13,14 +13,7 @@ export const ProjectDetails = ({
     children?: React.ReactNode;
 }) => {
     return (
-        <div
-            className={cn(
-                // className="w-full flex flex-col items-center justify-center",
-                className
-            )}
-        >
-            {children}
-        </div>
+        <div>{children}</div>
     );
 };
 
@@ -44,6 +37,10 @@ export const ProjectItems = ({
     deployedLink: string;
 }) => {
     const position = id % 2 === 0 ? "right" : "left";
+
+    const handleClick = (url: string) => {
+        window.open(url, "_blank");
+    };
 
     return (
         <div
@@ -73,13 +70,15 @@ export const ProjectItems = ({
                         title="Live Site"
                         otherClasses="h-12 w-40"
                         gradientClasses="h-16 w-46"
-                        buttonClasses="h-12 w-40 text-sm"
+                        buttonClasses="h-12 w-40 text-lg"
+                        handleClick={() => handleClick(deployedLink)}
                     />
                     <ProjectButton
                         title="View Code"
                         otherClasses="h-12 w-40"
                         gradientClasses="h-16 w-46"
-                        buttonClasses="h-12 w-40 text-sm"
+                        buttonClasses="h-12 w-40 text-lg"
+                        handleClick={() => handleClick(githubLink)}
                     />
                 </div>
             </div>
