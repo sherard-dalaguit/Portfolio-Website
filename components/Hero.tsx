@@ -9,8 +9,10 @@ const Hero = () => {
         <div className="pb-20 pt-36">
             <div>
                 <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="#ffffff" />
-                <Spotlight className="top-10 left-full h-[80vh] w-[40w]" fill="#433f4a" />
                 <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="#7a49d1" />
+
+                <Spotlight className="top-10 left-full h-[80vh] w-[40w]" fill="#dedede" />
+                <Spotlight className="top-40 left-full h-screen w-[50w]" fill="#7a49d1" />
             </div>
 
             <div className="h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.075] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
