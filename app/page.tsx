@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import {FloatingNav} from "@/components/ui/floating-navbar";
-import {FaHome} from "react-icons/fa";
 import Grid from "@/components/Grid";
+import Projects from "@/components/Projects";
 
 export default function Home() {
     return (
@@ -14,6 +14,7 @@ export default function Home() {
                 ]} />
                 <Hero />
                 <Grid />
+                <Projects />
             </div>
         </main>
     );
