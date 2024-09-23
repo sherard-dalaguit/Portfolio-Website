@@ -114,6 +114,7 @@ export const ProjectItems = ({
                 layout="responsive"
                 width={500}
                 height={300}
+                unoptimized
             />
         </div>
     );
