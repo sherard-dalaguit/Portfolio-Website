@@ -4,11 +4,13 @@ import {ProjectDetails, ProjectItems} from "@/components/ui/ProjectDetails";
 
 const Projects = () => {
     return (
-        <div id="projects">
-            <h1 className="font-bold text-center text-purple text-[72px] md:text-5xl lg:text-6xl">Personal Projects</h1>
+        <div id="projects" className="mt-10">
+            <h1 className="font-bold text-center text-[72px] md:text-5xl lg:text-6xl">
+                My <span className="text-purple">Personal Projects</span>
+            </h1>
             <section>
                 <ProjectDetails>
-                    {projects.map(({id, title, subheader, des, img, iconLists, githubLink, deployedLink }) => (
+                    {projects.map(({id, title, subheader, des, img, iconLists, githubLink, deployedLink, delayed }) => (
                         <ProjectItems
                             id={id}
                             key={id}
@@ -19,6 +21,7 @@ const Projects = () => {
                             iconLists={iconLists}
                             githubLink={githubLink}
                             deployedLink={deployedLink}
+                            delayed={delayed}
                         />
                     ))}
                 </ProjectDetails>

@@ -25,7 +25,8 @@ export const ProjectItems = ({
     img,
     iconLists,
     githubLink,
-    deployedLink
+    deployedLink,
+    delayed,
 }: {
     id: number;
     title: string;
@@ -35,6 +36,7 @@ export const ProjectItems = ({
     iconLists: string[];
     githubLink: string;
     deployedLink: string;
+    delayed?: string;
 }) => {
     const position = id % 2 === 0 ? "right" : "left";
 
@@ -65,22 +67,40 @@ export const ProjectItems = ({
                 <h2 className="mt-6 text-xl font-normal">{subheader}</h2>
                 <h3 className="prose prose-invert mt-4 max-w-xl">{des}</h3>
 
-                <div className="mt-8 flex flex-row space-x-10">
-                    <ProjectButton
-                        title="Live Site"
-                        otherClasses="h-12 w-40"
-                        gradientClasses="h-16 w-46"
-                        buttonClasses="h-12 w-40 text-lg"
-                        handleClick={() => handleClick(deployedLink)}
-                    />
-                    <ProjectButton
-                        title="View Code"
-                        otherClasses="h-12 w-40"
-                        gradientClasses="h-16 w-46"
-                        buttonClasses="h-12 w-40 text-lg"
-                        handleClick={() => handleClick(githubLink)}
-                    />
-                </div>
+                {delayed ? (
+                    <>
+                        <p className="mt-4 text-red-500 font-semibold">
+                            {`Note: This project is still in development. Expected completion: ${delayed}`}
+                        </p>
+                        <div className="mt-8">
+                            <ProjectButton
+                                title="View Code"
+                                otherClasses="h-12 w-40"
+                                gradientClasses="h-16 w-46"
+                                buttonClasses="h-12 w-40 text-lg"
+                                handleClick={() => handleClick(githubLink)}
+                            />
+                        </div>
+                    </>
+                ) : (
+                    <div className="mt-8 flex flex-row space-x-10">
+                        <ProjectButton
+                            title="Live Site"
+                            otherClasses="h-12 w-40"
+                            gradientClasses="h-16 w-46"
+                            buttonClasses="h-12 w-40 text-lg"
+                            handleClick={() => handleClick(deployedLink)}
+                        />
+                        <ProjectButton
+                            title="View Code"
+                            otherClasses="h-12 w-40"
+                            gradientClasses="h-16 w-46"
+                            buttonClasses="h-12 w-40 text-lg"
+                            handleClick={() => handleClick(githubLink)}
+                        />
+                    </div>
+                )}
+
             </div>
 
             <Image

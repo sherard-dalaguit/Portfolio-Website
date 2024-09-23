@@ -18,7 +18,7 @@ export const gridItems = [
     },
     {
         id: 2,
-        title: "I'm very flexible with time zone communications",
+        title: "I'm open to remote work and dealing with time zone differences",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
@@ -29,7 +29,7 @@ export const gridItems = [
     {
         id: 3,
         title: "My tech stack",
-        description: "I constantly try to improve",
+        description: "I'm always working to improve",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
         titleClassName: "justify-center",
@@ -98,7 +98,8 @@ export const projects = [
         img: "/p3.svg",
         iconLists: ["/re.svg", "/next.svg", "/ts.svg", "/convex.webp", "/shadcn.ico"],
         githubLink: "https://github.com/adrianhajdin/ai_saas_app",
-        deployedLink: ""
+        deployedLink: "",
+        delayed: "Early October 2024"
     },
     {
         id: 4,
@@ -108,7 +109,8 @@ export const projects = [
         img: "/project_pictures/typescript.avif",
         iconLists: ["/python.png", "/scikit.png", "/tensorflow.png", "/pandas_white.svg", "/matplotlib.svg"],
         githubLink: "https://github.com/adrianhajdin/iphone",
-        deployedLink: ""
+        deployedLink: "",
+        delayed: "Late December 2024"
     },
 ];
 
