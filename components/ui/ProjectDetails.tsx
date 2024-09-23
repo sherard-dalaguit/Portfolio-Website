@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react';
-import Image from "next/image";
 import {clsx} from "clsx";
 import ProjectButton from "@/components/ui/ProjectButton";
 
@@ -70,15 +69,15 @@ export const ProjectItems = ({
                         <p className="mt-4 text-red-500 font-semibold">
                             {`Note: This project is still in development. Expected completion: ${delayed}`}
                         </p>
-                        <div className="mt-8">
-                            <ProjectButton
-                                title="View Code"
-                                otherClasses="h-12 w-40"
-                                gradientClasses="h-16 w-46"
-                                buttonClasses="h-12 w-40 text-lg"
-                                handleClick={() => handleClick(githubLink)}
-                            />
-                        </div>
+                        {/*<div className="mt-8">*/}
+                        {/*    <ProjectButton*/}
+                        {/*        title="View Code"*/}
+                        {/*        otherClasses="h-12 w-40"*/}
+                        {/*        gradientClasses="h-16 w-46"*/}
+                        {/*        buttonClasses="h-12 w-40 text-lg"*/}
+                        {/*        handleClick={() => handleClick(githubLink)}*/}
+                        {/*    />*/}
+                        {/*</div>*/}
                     </>
                 ) : (
                     <div className="mt-8 flex flex-row space-x-10">
@@ -101,26 +100,11 @@ export const ProjectItems = ({
 
             </div>
 
-            {/*<Image*/}
-            {/*    src={img}*/}
-            {/*    alt="title"*/}
-            {/*    className={clsx(*/}
-            {/*        "opacity-90 shadow-2xl lg:col-span-2 lg:pt-0 rounded-xl",*/}
-            {/*        position === "right"*/}
-            {/*            ? "lg:order-1 lg:translate-x-[15%]"*/}
-            {/*            : "lg:-order-1 lg:translate-x-[-15%]"*/}
-            {/*    )}*/}
-            {/*    sizes="(max-width: 768px) 100vw, 50vw"*/}
-            {/*    layout="responsive"*/}
-            {/*    width={500}*/}
-            {/*    height={300}*/}
-            {/*    unoptimized*/}
-            {/*/>*/}
             <img
                 src={img}
                 alt="title"
                 className={clsx(
-                    "opacity-90 shadow-2xl lg:col-span-2 lg:pt-0 rounded-xl",
+                    "opacity-90 shadow-2xl lg:col-span-2 lg:pt-0 rounded-xl w-full h-auto",
                     position === "right"
                         ? "lg:order-1 lg:translate-x-[15%]"
                         : "lg:-order-1 lg:translate-x-[-15%]"
