@@ -6,9 +6,9 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 
 const Approach = () => {
 	return (
-		<section className="w-full py-20">
+		<section id="roadmap" className="w-full py-20">
 			<h1 className="font-bold text-center text-[72px] md:text-5xl lg:text-6xl">
-				My <span className="text-purple">Approach</span>
+				My <span className="text-purple">Roadmap</span>
 			</h1>
 			<div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
 				<Card
