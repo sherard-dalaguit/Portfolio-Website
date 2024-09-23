@@ -6,10 +6,8 @@ import {clsx} from "clsx";
 import ProjectButton from "@/components/ui/ProjectButton";
 
 export const ProjectDetails = ({
-    className,
     children,
 }: {
-    className?: string;
     children?: React.ReactNode;
 }) => {
     return (

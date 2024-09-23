@@ -75,7 +75,7 @@ export const projects = [
         title: "DevExchange",
         subheader: "Developer Knowledge Exchange Network",
         des: "A platform where developers can share insights, collaborate on projects, and engage in peer-to-peer learning to enhance their skills and foster innovation.",
-        img: "/project_pictures/DevExchange_3.png",
+        img: "/DevExchange_3.png",
         iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/c.svg", "/mongodb.png"],
         githubLink: "https://github.com/sherard-dalaguit/DevExchange",
         deployedLink: "https://dev-exchange-sherard-dalaguits-projects.vercel.app/"
@@ -85,7 +85,7 @@ export const projects = [
         title: "LumiNotes",
         subheader: "Productivity & Note-Taking App",
         des: "Offers customizable tools and integrations to help users organize tasks and capture notes seamlessly, streamlining their daily workflow.",
-        img: "/project_pictures/LumiNotes.png",
+        img: "/LumiNotes.png",
         iconLists: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/convex.webp"],
         githubLink: "https://github.com/sherard-dalaguit/LumiNotes",
         deployedLink: "https://luminotes.vercel.app/"
@@ -106,7 +106,7 @@ export const projects = [
         title: "BudgetWise",
         subheader: "Machine-Learning Financial Forecasting Model",
         des: "Utilizes advanced machine learning algorithms to deliver accurate financial forecasts, empowering users to make informed budgeting decisions.",
-        img: "/project_pictures/typescript.avif",
+        img: "/typescript.avif",
         iconLists: ["/python.png", "/scikit.png", "/tensorflow.png", "/pandas_white.svg", "/matplotlib.svg"],
         githubLink: "https://github.com/adrianhajdin/iphone",
         deployedLink: "",
