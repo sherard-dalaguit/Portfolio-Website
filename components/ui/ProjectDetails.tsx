@@ -49,7 +49,7 @@ export const ProjectItems = ({
             className="mt-10 grid items-center gap-8 rounded-xl border border-blue-50/20 bg-gradient-to-b from-purple/20 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:gap-0 lg:py-12">
             <div
                 className={clsx(
-                    "absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-purple/20 blur-3xl filter",
+                    "absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-white-200/40 blur-3xl filter",
                     position === "right" ? "lg:right-0" : "lg:left-0"
                 )}
             />
