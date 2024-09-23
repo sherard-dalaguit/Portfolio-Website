@@ -101,7 +101,22 @@ export const ProjectItems = ({
 
             </div>
 
-            <Image
+            {/*<Image*/}
+            {/*    src={img}*/}
+            {/*    alt="title"*/}
+            {/*    className={clsx(*/}
+            {/*        "opacity-90 shadow-2xl lg:col-span-2 lg:pt-0 rounded-xl",*/}
+            {/*        position === "right"*/}
+            {/*            ? "lg:order-1 lg:translate-x-[15%]"*/}
+            {/*            : "lg:-order-1 lg:translate-x-[-15%]"*/}
+            {/*    )}*/}
+            {/*    sizes="(max-width: 768px) 100vw, 50vw"*/}
+            {/*    layout="responsive"*/}
+            {/*    width={500}*/}
+            {/*    height={300}*/}
+            {/*    unoptimized*/}
+            {/*/>*/}
+            <img
                 src={img}
                 alt="title"
                 className={clsx(
@@ -109,12 +124,10 @@ export const ProjectItems = ({
                     position === "right"
                         ? "lg:order-1 lg:translate-x-[15%]"
                         : "lg:-order-1 lg:translate-x-[-15%]"
-                )}
+                    )}
                 sizes="(max-width: 768px) 100vw, 50vw"
-                layout="responsive"
                 width={500}
                 height={300}
-                unoptimized
             />
         </div>
     );
