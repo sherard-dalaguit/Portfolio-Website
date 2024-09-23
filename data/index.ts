@@ -95,7 +95,7 @@ export const projects = [
         title: "TeamSync",
         subheader: "Real-Time Team Communication Platform",
         des: "Facilitate seamless collaboration and communication among team members through instant messaging and integrated project management features.",
-        img: "/p3.svg",
+        img: "/slack.png",
         iconLists: ["/re.svg", "/next.svg", "/ts.svg", "/convex.webp", "/shadcn.ico"],
         githubLink: "https://github.com/adrianhajdin/ai_saas_app",
         deployedLink: "",
