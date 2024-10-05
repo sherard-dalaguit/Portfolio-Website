@@ -8,17 +8,17 @@ export const navItems = [
 export const gridItems = [
     {
         id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
-        description: "",
+        title: "Computer Science & Pure Mathematics Student at UC Irvine",
+        description: "Building a strong foundation in both theoretical and practical aspects of technology and mathematics",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
         titleClassName: "justify-end",
-        img: "/b1.svg",
+        img: "/math_background_5.avif",
         spareImg: "",
     },
     {
         id: 2,
-        title: "I'm open to remote work and dealing with time zone differences",
+        title: "I'm open to remote work and onsite positions across the USA",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
@@ -38,8 +38,8 @@ export const gridItems = [
     },
     {
         id: 4,
-        title: "Tech enthusiast with a passion for development.",
-        description: "",
+        title: "Tech Enthusiast & Lifelong Learner",
+        description: "Continuously exploring new technologies and methodologies to enhance my development skills",
         className: "lg:col-span-2 md:col-span-3 md:row-span-1",
         imgClassName: "",
         titleClassName: "justify-start",
