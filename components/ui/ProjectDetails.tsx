@@ -69,15 +69,6 @@ export const ProjectItems = ({
                         <p className="mt-4 text-red-500 font-semibold">
                             {`Note: This project is still in development. Expected completion: ${delayed}`}
                         </p>
-                        {/*<div className="mt-8">*/}
-                        {/*    <ProjectButton*/}
-                        {/*        title="View Code"*/}
-                        {/*        otherClasses="h-12 w-40"*/}
-                        {/*        gradientClasses="h-16 w-46"*/}
-                        {/*        buttonClasses="h-12 w-40 text-lg"*/}
-                        {/*        handleClick={() => handleClick(githubLink)}*/}
-                        {/*    />*/}
-                        {/*</div>*/}
                     </>
                 ) : (
                     <div className="mt-8 flex flex-row space-x-10">
