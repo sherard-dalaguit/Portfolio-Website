@@ -5,7 +5,7 @@ import {ProjectDetails, ProjectItems} from "@/components/ui/ProjectDetails";
 const Projects = () => {
     return (
         <div id="projects" className="mt-10">
-            <h1 className="font-bold text-center text-[72px] md:text-5xl lg:text-6xl">
+            <h1 className="heading lg:max-w-[45vw]">
                 My <span className="text-purple">Personal Projects</span>
             </h1>
             <section>
